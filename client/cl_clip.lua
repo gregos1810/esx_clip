@@ -15,11 +15,11 @@ AddEventHandler('esx_clip:clipcli', function()
     if hash~=nil then
       TriggerServerEvent('esx_clip:remove')
       AddAmmoToPed(GetPlayerPed(-1), hash,25)
-      ESX.ShowNotification("tu a utilisé un chargeur")
+      ESX.ShowNotification("tu as utilisé un chargeur")
     else
-      ESX.ShowNotification("tu n'a pas d'arme en main")
+      ESX.ShowNotification("tu n'as pas d'arme en main")
     end
   else
-    ESX.ShowNotification("ce type de munision ne convient pas")
+    ESX.ShowNotification("ce type de munition ne convient pas")
   end
 end)
